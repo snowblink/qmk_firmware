@@ -5,5 +5,12 @@
 
 // place overrides here
 #define TAPPING_TOGGLE 2 // how many taps before triggering the toggle
+#define TAPPING_TERM 175
 
+#ifdef BACKLIGHT_ENABLE
+    #define BACKLIGHT_PIN B5
+	#define BACKLIGHT_LEVELS 3
+    #define BACKLIGHT_ON_STATE 0
+#endif	
+	
 #endif
