@@ -47,7 +47,7 @@ enum {
 	//TD equal to turn on layer NP
 void _td_equal_tg_finished (qk_tap_dance_state_t *state, void *user_data) {
   if (state->count == 1) {
-    register_code(KC_EQUAL);
+    register_code(KC_KP_ENTER);
   } else if (state->count == 2) {
     backlight_set(3);
 	layer_on(_NP);
