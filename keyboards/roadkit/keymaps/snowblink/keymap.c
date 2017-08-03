@@ -25,7 +25,6 @@ extern keymap_config_t keymap_config;
 #define XXXXXXX KC_NO
 
 void matrix_init_user(void) {
-	backlight_level(4);
 }
 
 
@@ -49,7 +48,6 @@ void _td_equal_tg_finished (qk_tap_dance_state_t *state, void *user_data) {
   if (state->count == 1) {
     register_code(KC_KP_ENTER);
   } else if (state->count == 2) {
-    backlight_set(3);
 	layer_on(_NP);
 	layer_off(_L1);
 	layer_off(_L2);
@@ -70,7 +68,6 @@ void _td_kp_plus_tg_finished (qk_tap_dance_state_t *state, void *user_data) {
     register_code(KC_KP_PLUS);
   } else if (state->count == 2) {
 //    layer_invert(_L1);
-    backlight_set(2);
 	layer_on(_L1);
 	layer_off(_L2);
 	layer_off(_L3);
@@ -89,7 +86,6 @@ void _td_dot_tg_finished (qk_tap_dance_state_t *state, void *user_data) {
   if (state->count == 1) {
     register_code(KC_DOT);
   } else if (state->count == 2) {
-    backlight_set(1);
 	layer_on(_L2);
 	layer_off(_L1);
 	layer_off(_L3);
@@ -107,7 +103,6 @@ void _td_0_tg_finished (qk_tap_dance_state_t *state, void *user_data) {
   if (state->count == 1) {
     register_code(KC_0);
   } else if (state->count == 2) {
-    backlight_set(0);
 	layer_on(_L3);
 	layer_off(_L1);
 	layer_off(_L2);
