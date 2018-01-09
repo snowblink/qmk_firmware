@@ -6,6 +6,6 @@
 // Bring in original defaults
 #include "../../config.h"
 
-#define TAPPING_TOGGLE 2 // how many taps before triggering the toggle
+#define TAPPING_TOGGLE 1 // how many taps before triggering the toggle
 
 #endif
