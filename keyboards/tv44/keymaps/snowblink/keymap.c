@@ -32,7 +32,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [UPPER] = KEYMAP( /* LAYER 1 */
     KC_GRV,  KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DEL,
     _______, KC_BSLS, KC_QUOT, KC_MINS, KC_EQL,  _______, _______, KC_LEFT, KC_UP, KC_DOWN, KC_RGHT, _______,
-    _______, KC_ESC,  _______, KC_PSCR, _______, _______, _______, KC_MSTP, KC_LBRC, KC_RBRC, KC_MNXT, KC_RSFT,
+    _______, KC_ESC,  _______, KC_PSCR, _______, _______, _______, _______, KC_LBRC, KC_RBRC, _______, _______,
     _______, KC_LGUI, _______,                   _______, _______,                   _______, _______, _______
   ),
   [NUMPAD] = KEYMAP( /* LAYER 2 */
