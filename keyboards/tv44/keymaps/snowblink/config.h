@@ -4,5 +4,6 @@
 #include "../../config.h"
 
 // place overrides here
+#define TAPPING_TOGGLE 1 // how many taps before triggering the toggle
 
 #endif
