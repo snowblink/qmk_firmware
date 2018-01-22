@@ -3,6 +3,8 @@
 #include "action_layer.h"
 #include "version.h"
 
+#define _______ KC_TRNS
+
 enum custom_keycodes {
   PLACEHOLDER = SAFE_RANGE, // can always be here
   EPRM,
@@ -25,7 +27,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_MINUS,KC_EQUAL, // thumb top row
     KC_TRANSPARENT, // top thumblet
     KC_LGUI,KC_ENTER, // big thumb buttons
-    LCTL(LGUI(KC_D)), // bottom thumblet
+    _______, // bottom thumblet
 
     // right hand
     TT(2),KC_6,KC_7,KC_8,KC_9,KC_0,KC_BSLASH, // top row
