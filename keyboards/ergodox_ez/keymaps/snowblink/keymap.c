@@ -58,12 +58,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT, // bottom thumblet
 
     // right hand
-    KC_TRANSPARENT,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11,KC_TRANSPARENT, // top row
+    KC_TRANSPARENT,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11, // top row
     KC_TRANSPARENT, // top big vertical
-    KC_7,KC_8,KC_9,KC_ASTR,KC_TRANSPARENT,KC_TRANSPARENT, // 2nd row
-    KC_4,KC_5,KC_6,KC_PLUS,KC_TRANSPARENT,KC_TRANSPARENT, // 3rd row
-    KC_AMPR, // bottom big vertical
-    KC_1,KC_2,KC_3,KC_TRANSPARENT,KC_TRANSPARENT, // 4th row
+    KC_TRANSPARENT, KC_7,KC_8,KC_9,KC_ASTR,KC_TRANSPARENT, // 3rd row
+    KC_TRANSPARENT, KC_4,KC_5,KC_6,KC_PLUS,KC_TRANSPARENT, // 2nd row
+    KC_TRANSPARENT, // bottom big vertical
+    KC_AMPR, KC_1,KC_2,KC_3,KC_TRANSPARENT,KC_TRANSPARENT, // 4th row
     KC_0, KC_DOT, KC_BSPACE, KC_EQUAL, KC_TRANSPARENT, // bottom row
     RGB_TOG,RGB_SLD, // thumb top row
     KC_TRANSPARENT,KC_TRANSPARENT, // two thumblets
