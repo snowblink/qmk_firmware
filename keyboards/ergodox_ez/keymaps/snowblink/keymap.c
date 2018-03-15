@@ -23,9 +23,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     CTL_T(KC_ESCAPE),KC_A,KC_S,KC_D,KC_F,KC_G, // 3rd row
     KC_LSFT,KC_Z,KC_X,KC_C,KC_V,KC_B, // 4th row
     LGUI(KC_V), // bottom big vertical
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_LCTL,KC_LALT,KC_LGUI, // bottom row
+    _______, _______, KC_LCTL, KC_LALT, KC_LGUI, // bottom row
     KC_MINUS,KC_EQUAL, // thumb top row
-    KC_TRANSPARENT, // top thumblet
+    _______, // top thumblet
     KC_LGUI,KC_ENTER, // big thumb buttons
     _______, // bottom thumblet
 
@@ -36,9 +36,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_H,KC_J,KC_K,KC_L,KC_SCOLON,KC_QUOTE, // 3rd row
     LGUI(KC_KP_MINUS), // bottom big vertical
     KC_N,KC_M,KC_COMMA,KC_DOT,KC_SLASH,KC_RSFT, // 4th row
-    KC_LGUI,KC_LALT,KC_LCTL,KC_TRANSPARENT, TT(3), // bottom row
+    KC_LGUI,KC_LALT,KC_LCTL, _______, TT(3), // bottom row
     KC_LBRACKET,KC_RBRACKET, // thumb top row
-    KC_TRANSPARENT, M(1), // two thumblets
+    M(2), M(1), // two thumblets
     KC_BSPACE,KC_SPACE // big thumb buttons
   ),
 
@@ -144,6 +144,12 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt)
         case 1:
         if (record->event.pressed) {
             SEND_STRING("=>");
+            return false;
+        }
+        break;
+        case 2:
+        if (record->event.pressed) {
+            SEND_STRING("notonthehighstreet");
             return false;
         }
         break;
