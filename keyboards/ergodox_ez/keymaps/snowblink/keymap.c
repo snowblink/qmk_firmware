@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // bottom row
     RGB_MOD,KC_TRANSPARENT, // thumb row top
     KC_TRANSPARENT, // top thumblet
-    KC_TRANSPARENT, KC_TRANSPARENT, // big thumb buttons
+    RGB_VAD,RGB_VAI, // big thumb buttons
     KC_TRANSPARENT, // bottom thumblet
 
     // right hand
