@@ -23,7 +23,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     CTL_T(KC_ESCAPE),KC_A,KC_S,KC_D,KC_F,KC_G, // 3rd row
     KC_LSFT,KC_Z,KC_X,KC_C,KC_V,KC_B, // 4th row
     LGUI(KC_V), // bottom big vertical
-    _______, _______, KC_LCTL, KC_LALT, KC_LGUI, // bottom row
+    TT(4), _______, KC_LCTL, KC_LALT, KC_LGUI, // bottom row
     KC_MINUS,KC_EQUAL, // thumb top row
     _______, // top thumblet
     KC_LGUI,KC_ENTER, // big thumb buttons
@@ -60,11 +60,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // right hand
     KC_TRANSPARENT,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11, // top row
     KC_TRANSPARENT, // top big vertical
-    KC_TRANSPARENT, KC_7,KC_8,KC_9,KC_ASTR,KC_TRANSPARENT, // 3rd row
-    KC_TRANSPARENT, KC_4,KC_5,KC_6,KC_PLUS,KC_TRANSPARENT, // 2nd row
-    KC_TRANSPARENT, // bottom big vertical
-    KC_AMPR, KC_1,KC_2,KC_3,KC_TRANSPARENT,KC_TRANSPARENT, // 4th row
-    KC_0, KC_DOT, KC_BSPACE, KC_EQUAL, KC_TRANSPARENT, // bottom row
+    _______, _______,_______,_______,_______,_______, // 3rd row
+    _______, _______,_______,_______,_______,_______, // 2nd row
+    _______, // bottom big vertical
+    KC_AMPR, _______,_______,_______,_______,_______, // 4th row
+    _______, _______, _______, _______, _______, // bottom row
     RGB_TOG,RGB_SLD, // thumb top row
     KC_TRANSPARENT,KC_TRANSPARENT, // two thumblets
     RGB_HUD,RGB_HUI // big thumb buttons
@@ -124,6 +124,34 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRANSPARENT,KC_TRANSPARENT, // thumb top row
     KC_TRANSPARENT,KC_TRANSPARENT, // two thumblets
     LALT(LSFT(KC_UP)),LALT(LSFT(KC_DOWN)) // big thumb buttons
+  ),
+
+  // layer 1
+  [4] = KEYMAP(
+    // left hand
+    _______, _______, _______, _______, _______, _______, _______, // top row
+    _______, _______, _______, _______, _______, _______, // 2nd row
+    _______, // top big vertical
+    _______, _______, _______, _______, _______, _______, // 3rd row
+    _______, // bottom big vertical
+    _______, _______, _______, _______, _______, _______, // 4th row
+    _______, _______, _______, _______, _______, // bottom row
+    _______, _______, // thumb row top
+    _______, // top thumblet
+    _______, _______, // big thumb buttons
+    _______, // bottom thumblet
+
+    // right hand
+    _______, _______, _______, _______, _______, _______, _______, // top row
+    _______, // top big vertical
+    _______, KC_7, KC_8, KC_9, _______, _______, // 3rd row
+    _______, KC_4, KC_5, KC_6, _______, _______, // 2nd row
+    _______, // bottom big vertical
+    _______, KC_1, KC_2, KC_3, _______,_______, // 4th row
+    KC_0, KC_DOT, _______, _______, _______, // bottom row
+    _______,_______, // thumb top row
+    _______,_______, // two thumblets
+    _______,_______ // big thumb buttons
   ),
 
 };
