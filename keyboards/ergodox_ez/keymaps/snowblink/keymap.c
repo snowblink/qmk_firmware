@@ -45,84 +45,84 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // layer 1
   [1] = KEYMAP(
     // left hand
-    M(0),KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,KC_TRANSPARENT, // top row
-    KC_TRANSPARENT,KC_EXLM,KC_AT,KC_LCBR,KC_RCBR,KC_PIPE, // 2nd row
-    KC_TRANSPARENT, // top big vertical
-    KC_TRANSPARENT,KC_HASH,KC_DLR,KC_LPRN,KC_RPRN,KC_GRAVE, // 3rd row
-    KC_TRANSPARENT, // bottom big vertical
-    KC_PERC,KC_CIRC,KC_LBRACKET,KC_RBRACKET,KC_TILD,KC_TRANSPARENT, // 4th row
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // bottom row
-    RGB_MOD,KC_TRANSPARENT, // thumb row top
-    KC_TRANSPARENT, // top thumblet
+    M(0),KC_F1,KC_F2,KC_F3,KC_F4,KC_F5,_______, // top row
+    _______,KC_EXLM,KC_AT,KC_LCBR,KC_RCBR,KC_PIPE, // 2nd row
+    _______, // top big vertical
+    _______,KC_HASH,KC_DLR,KC_LPRN,KC_RPRN,KC_GRAVE, // 3rd row
+    _______, // bottom big vertical
+    KC_PERC,KC_CIRC,KC_LBRACKET,KC_RBRACKET,KC_TILD,_______, // 4th row
+    _______,_______,_______,_______,_______, // bottom row
+    RGB_MOD,_______, // thumb row top
+    _______, // top thumblet
     RGB_VAD,RGB_VAI, // big thumb buttons
-    KC_TRANSPARENT, // bottom thumblet
+    _______, // bottom thumblet
 
     // right hand
-    KC_TRANSPARENT,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11, // top row
-    KC_TRANSPARENT, // top big vertical
+    _______,KC_F6,KC_F7,KC_F8,KC_F9,KC_F10,KC_F11, // top row
+    _______, // top big vertical
     _______, _______,_______,_______,_______,_______, // 3rd row
     _______, _______,_______,_______,_______,_______, // 2nd row
     _______, // bottom big vertical
     KC_AMPR, _______,_______,_______,_______,_______, // 4th row
     _______, _______, _______, _______, _______, // bottom row
     RGB_TOG,RGB_SLD, // thumb top row
-    KC_TRANSPARENT,KC_TRANSPARENT, // two thumblets
+    _______,_______, // two thumblets
     RGB_HUD,RGB_HUI // big thumb buttons
   ),
 
   // layer 2
   [2] = KEYMAP(
     // left hand
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // top row
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_MS_UP,KC_TRANSPARENT,KC_TRANSPARENT, // 2nd row
-    KC_TRANSPARENT, // top big vertical
-    KC_TRANSPARENT, KC_TRANSPARENT,KC_MS_LEFT,KC_MS_DOWN,KC_MS_RIGHT,KC_TRANSPARENT, // 3rd row
-    KC_TRANSPARENT,KC_TRANSPARENT, KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // 4th row
-    KC_TRANSPARENT, // bottom big vertical
-    KC_TRANSPARENT,KC_TRANSPARENT, KC_TRANSPARENT, KC_MS_BTN1,KC_MS_BTN2, // bottom row
-    KC_TRANSPARENT,KC_TRANSPARENT, // thumb top row
-    KC_TRANSPARENT, // top thumblet
-    KC_MS_BTN1, KC_TRANSPARENT, // big thumb buttons
-    KC_TRANSPARENT, // bottom thumblet
+    _______,_______,_______,_______,_______,_______,_______, // top row
+    _______,_______,_______,KC_MS_UP,_______,_______, // 2nd row
+    _______, // top big vertical
+    _______, _______,KC_MS_LEFT,KC_MS_DOWN,KC_MS_RIGHT,_______, // 3rd row
+    _______,_______, _______,_______,_______,_______, // 4th row
+    _______, // bottom big vertical
+    _______,_______, _______, KC_MS_BTN1,KC_MS_BTN2, // bottom row
+    _______,_______, // thumb top row
+    _______, // top thumblet
+    KC_MS_BTN1, _______, // big thumb buttons
+    _______, // bottom thumblet
 
     // right hand
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // top row
-    KC_TRANSPARENT, // top big vertical
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_UP,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // 2nd row
-    KC_TRANSPARENT,KC_LEFT,KC_DOWN,KC_RIGHT,KC_TRANSPARENT,KC_MEDIA_PLAY_PAUSE, // 3rd row
-    KC_TRANSPARENT, // bottom big vertical
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_MEDIA_PREV_TRACK,KC_MEDIA_NEXT_TRACK,KC_TRANSPARENT,KC_TRANSPARENT, // 4th row
-    KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,KC_AUDIO_MUTE,KC_TRANSPARENT,KC_TRANSPARENT, // bottom row
-    KC_TRANSPARENT,KC_TRANSPARENT, // top thumb row
-    KC_TRANSPARENT,KC_TRANSPARENT, // two thumblets
-    KC_TRANSPARENT,KC_MS_BTN2 // big thumb buttons
+    _______,_______,_______,_______,_______,_______,_______, // top row
+    _______, // top big vertical
+    _______,_______,KC_UP,_______,_______,_______, // 2nd row
+    _______,KC_LEFT,KC_DOWN,KC_RIGHT,_______,KC_MEDIA_PLAY_PAUSE, // 3rd row
+    _______, // bottom big vertical
+    _______,_______,KC_MEDIA_PREV_TRACK,KC_MEDIA_NEXT_TRACK,_______,_______, // 4th row
+    KC_AUDIO_VOL_DOWN,KC_AUDIO_VOL_UP,KC_AUDIO_MUTE,_______,_______, // bottom row
+    _______,_______, // top thumb row
+    _______,_______, // two thumblets
+    _______,KC_MS_BTN2 // big thumb buttons
   ),
 
   // layer 3
   [3] = KEYMAP(
     // left hand
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // top row
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_UP,KC_TRANSPARENT,KC_TRANSPARENT, // 2nd row
-    KC_TRANSPARENT, // top big vertical
-    KC_TRANSPARENT, KC_TRANSPARENT,KC_LEFT,KC_DOWN,KC_RIGHT,KC_TRANSPARENT, // 3rd row
-    KC_TRANSPARENT,KC_TRANSPARENT, KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // 4th row
-    KC_TRANSPARENT, // bottom big vertical
-    KC_TRANSPARENT,KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, // bottom row
-    KC_TRANSPARENT, KC_TRANSPARENT, // thumb top row
-    KC_TRANSPARENT, // top thumblet
-    LALT(LCTL(KC_LGUI)),KC_TRANSPARENT, // big thumb buttons
-    KC_TRANSPARENT, // bottom thumblet
+    _______,_______,_______,_______,_______,_______,_______, // top row
+    _______,_______,_______,KC_UP,_______,_______, // 2nd row
+    _______, // top big vertical
+    _______, _______,KC_LEFT,KC_DOWN,KC_RIGHT,_______, // 3rd row
+    _______,_______, _______,_______,_______,_______, // 4th row
+    _______, // bottom big vertical
+    _______,_______, _______, _______, _______, // bottom row
+    _______, _______, // thumb top row
+    _______, // top thumblet
+    LALT(LCTL(KC_LGUI)),_______, // big thumb buttons
+    _______, // bottom thumblet
 
     // right hand
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // top row
-    KC_TRANSPARENT, // top big vertical
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_UP,KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT, // 2nd row
-    KC_TRANSPARENT, KC_LEFT,KC_DOWN,KC_RIGHT,KC_TRANSPARENT,KC_PGUP, // 3rd row
-    KC_TRANSPARENT, // bottom big vertical
-    KC_TRANSPARENT,KC_TRANSPARENT,KC_TRANSPARENT,KC_UP,KC_TRANSPARENT,KC_PGDOWN, // 4th row
-    KC_TRANSPARENT,KC_LEFT,KC_DOWN,KC_RIGHT,KC_TRANSPARENT, // bottom row
-    KC_TRANSPARENT,KC_TRANSPARENT, // thumb top row
-    KC_TRANSPARENT,KC_TRANSPARENT, // two thumblets
+    _______,_______,_______,_______,_______,_______,_______, // top row
+    _______, // top big vertical
+    _______,_______,KC_UP,_______,_______,_______, // 2nd row
+    _______, KC_LEFT,KC_DOWN,KC_RIGHT,_______,KC_PGUP, // 3rd row
+    _______, // bottom big vertical
+    _______,_______,_______,KC_UP,_______,KC_PGDOWN, // 4th row
+    _______,KC_LEFT,KC_DOWN,KC_RIGHT,_______, // bottom row
+    _______,_______, // thumb top row
+    _______,_______, // two thumblets
     LALT(LSFT(KC_UP)),LALT(LSFT(KC_DOWN)) // big thumb buttons
   ),
 
