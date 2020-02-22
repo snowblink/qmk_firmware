@@ -1,7 +1,4 @@
-#include "roadkit.h"
-#include "action_layer.h"
-#include "eeconfig.h"
-
+#include QMK_KEYBOARD_H
 extern keymap_config_t keymap_config;
 
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
@@ -174,14 +171,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----`-----`-----`-----|
  * |  0  |  .  |  +  |  =  |
  * `-----`-----`-----`-----'
- */				   
+ */
   [_L2] = /* LAYER 2 */
     SINGLES_KEYMAP(KC_SYSTEM_SLEEP,     KC_MS_BTN1,          KC_MS_BTN2,          KC_AUDIO_VOL_UP, \
                    LALT(KC_F4),         KC_F11,              LGUI(KC_TAB),        KC_AUDIO_VOL_DOWN, \
                    KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK, KC_AUDIO_MUTE, \
                    KC_TRNS,             KC_TRNS,             KC_TRNS,             KC_TRNS),
 
-				   
+
 /* L3 needs cut, copy, paste, undo, again (redo), find, calc, www back, www forward, F5
  * ,-----------------------.
  * |WBack|WHome|WFor | F5  |
@@ -192,7 +189,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-----`-----`-----`-----|
  * |  0  |  .  |  +  |  =  |
  * `-----`-----`-----`-----'
- */	
+ */
   [_L3] = /* LAYER 3 */
     SINGLES_KEYMAP(KC_WWW_BACK,   KC_WWW_HOME, KC_WWW_FORWARD, KC_F5, \
                    KC_CALCULATOR, LCTL(KC_Z),  LCTL(KC_Y),     KC_WWW_SEARCH, \
