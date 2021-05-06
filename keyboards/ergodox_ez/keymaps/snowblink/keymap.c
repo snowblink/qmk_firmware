@@ -1,6 +1,4 @@
-#include "ergodox_ez.h"
-#include "debug.h"
-#include "action_layer.h"
+#include QMK_KEYBOARD_H
 #include "version.h"
 
 #define _______ KC_TRNS
@@ -15,7 +13,7 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     // base Layer
-    [0] = KEYMAP(
+    [0] = LAYOUT_ergodox(
         // left hand
         KC_GRAVE, KC_1, KC_2, KC_3, KC_4, KC_5, TT(1),   // top row
         KC_TAB, KC_Q, KC_W, KC_E, KC_R, KC_T,            // 2nd row
@@ -43,7 +41,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
 
     // layer 1
-    [1] = KEYMAP(
+    [1] = LAYOUT_ergodox(
         // left hand
         M(0), KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, _______,              // top row
         _______, KC_EXLM, KC_AT, KC_LCBR, KC_RCBR, KC_PIPE,            // 2nd row
@@ -71,7 +69,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
 
     // layer 2
-    [2] = KEYMAP(
+    [2] = LAYOUT_ergodox(
         // left hand
         _______, KC_SYSTEM_SLEEP, _______, _______, _______, _______, _______,  // top row
         _______, _______, _______, KC_MS_UP, _______, _______,                  // 2nd row
@@ -99,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
 
     // layer 3
-    [3] = KEYMAP(
+    [3] = LAYOUT_ergodox(
         // left hand
         _______, _______, _______, _______, _______, _______, _______,  // top row
         _______, _______, _______, KC_UP, _______, _______,             // 2nd row
@@ -127,7 +125,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
 
     // layer 1
-    [4] = KEYMAP(
+    [4] = LAYOUT_ergodox(
         // left hand
         _______, _______, _______, _______, _______, _______, _______,  // top row
         _______, _______, _______, _______, _______, _______,           // 2nd row
