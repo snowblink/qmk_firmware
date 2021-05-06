@@ -71,20 +71,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // layer 2
     [2] = LAYOUT_ergodox(
         // left hand
-        _______, KC_SYSTEM_SLEEP, _______, _______, _______, _______, _______,  // top row
-        _______, _______, _______, KC_MS_UP, _______, _______,                  // 2nd row
-        _______,                                                                // top big vertical
-        _______, _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______,         // 3rd row
-        _______, _______, _______, _______, _______, _______,                   // 4th row
-        _______,                                                                // bottom big vertical
-        _______, _______, _______, KC_MS_BTN1, KC_MS_BTN2,                      // bottom row
-        _______, _______,                                                       // thumb top row
-        _______,                                                                // top thumblet
-        KC_MS_BTN1, _______,                                                    // big thumb buttons
-        _______,                                                                // bottom thumblet
+        _______, _______, _______, _______, _______, _______, _______,   // top row
+        _______, _______, _______, KC_MS_UP, _______, _______,           // 2nd row
+        _______,                                                         // top big vertical
+        _______, _______, KC_MS_LEFT, KC_MS_DOWN, KC_MS_RIGHT, _______,  // 3rd row
+        _______, _______, _______, _______, _______, _______,            // 4th row
+        _______,                                                         // bottom big vertical
+        _______, _______, _______, KC_MS_BTN1, KC_MS_BTN2,               // bottom row
+        _______, _______,                                                // thumb top row
+        _______,                                                         // top thumblet
+        KC_MS_BTN1, _______,                                             // big thumb buttons
+        _______,                                                         // bottom thumblet
 
         // right hand
-        _______, _______, _______, _______, _______, _______, _______,                 // top row
+        _______, KC_SYSTEM_SLEEP, _______, _______, _______, _______, _______,         // top row
         _______,                                                                       // top big vertical
         _______, _______, KC_UP, _______, _______, _______,                            // 2nd row
         _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______, KC_MEDIA_PLAY_PAUSE,             // 3rd row
