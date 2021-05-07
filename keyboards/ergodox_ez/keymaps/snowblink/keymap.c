@@ -8,6 +8,8 @@ enum custom_keycodes {
     EPRM,
     VRSN,
     RGB_SLD,
+    NOTHS,
+    HASHROCKET
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -36,14 +38,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,  // 4th row
         KC_LGUI, KC_LALT, KC_LCTL, _______, TT(3),        // bottom row
         KC_LBRACKET, KC_RBRACKET,                         // thumb top row
-        M(2), M(1),                                       // two thumblets
+        NOTHS, HASHROCKET,                                // two thumblets
         KC_BSPACE, KC_SPACE                               // big thumb buttons
         ),
 
     // layer 1
     [1] = LAYOUT_ergodox(
         // left hand
-        M(0), KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, _______,              // top row
+        VRSN, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, _______,              // top row
         _______, KC_EXLM, KC_AT, KC_LCBR, KC_RCBR, KC_PIPE,            // 2nd row
         _______,                                                       // top big vertical
         _______, KC_HASH, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,          // 3rd row
@@ -156,30 +158,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 const uint16_t PROGMEM fn_actions[] = {[1] = ACTION_LAYER_TAP_TOGGLE(1)};
 
-// leaving this in place for compatibilty with old keymaps cloned and re-compiled.
-const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) {
-    switch (id) {
-        case 0:
-            if (record->event.pressed) {
-                SEND_STRING(QMK_KEYBOARD "/" QMK_KEYMAP " @ " QMK_VERSION);
-            }
-            break;
-        case 1:
-            if (record->event.pressed) {
-                SEND_STRING("=>");
-                return false;
-            }
-            break;
-        case 2:
-            if (record->event.pressed) {
-                SEND_STRING("notonthehighstreet");
-                return false;
-            }
-            break;
-    }
-    return MACRO_NONE;
-};
-
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     if (record->event.pressed) {
         switch (keycode) {
@@ -191,6 +169,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 rgblight_mode(1);
                 return false;
 #endif
+            case NOTHS:
+                SEND_STRING("notonthehighstreet");
+                return false;
+            case HASHROCKET:
+                SEND_STRING("=>");
+                return false;
         }
     }
     return true;
@@ -213,6 +197,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
     uint8_t layer = get_highest_layer(state);
     switch (layer) {
         case 0:
+            ergodox_board_led_off();
 #ifdef RGBLIGHT_COLOR_LAYER_0
             rgblight_setrgb(RGBLIGHT_COLOR_LAYER_0);
 #endif
