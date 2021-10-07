@@ -8,7 +8,6 @@ enum custom_keycodes {
     EPRM,
     VRSN,
     RGB_SLD,
-    NOTHS,
     HASHROCKET
 };
 
@@ -38,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,  // 4th row
         KC_LGUI, KC_LALT, KC_LCTL, _______, TT(3),        // bottom row
         KC_LBRACKET, KC_RBRACKET,                         // thumb top row
-        NOTHS, HASHROCKET,                                // two thumblets
+        _______, HASHROCKET,                              // two thumblets
         KC_BSPACE, KC_SPACE                               // big thumb buttons
         ),
 
@@ -169,9 +168,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 rgblight_mode(1);
                 return false;
 #endif
-            case NOTHS:
-                SEND_STRING("notonthehighstreet");
-                return false;
             case HASHROCKET:
                 SEND_STRING("=>");
                 return false;
