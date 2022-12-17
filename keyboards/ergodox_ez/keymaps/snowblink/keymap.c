@@ -1,8 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
 
-#define _______ KC_TRNS
-
 enum custom_keycodes {
     PLACEHOLDER = SAFE_RANGE,  // can always be here
     EPRM,
@@ -29,16 +27,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,                                         // bottom thumblet
 
         // right hand
-        TT(2), KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSLASH,   // top row
+        TT(2), KC_6, KC_7, KC_8, KC_9, KC_0, KC_BSLS,   // top row
         LGUI(KC_KP_PLUS),                                 // top big vertical
         KC_Y, KC_U, KC_I, KC_O, KC_P, KC_MINUS,           // 2nd row
-        KC_H, KC_J, KC_K, KC_L, KC_SCOLON, KC_QUOTE,      // 3rd row
+        KC_H, KC_J, KC_K, KC_L, KC_SCLN, KC_QUOTE,      // 3rd row
         LGUI(KC_KP_MINUS),                                // bottom big vertical
         KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,  // 4th row
         KC_LGUI, KC_LALT, KC_LCTL, _______, TT(3),        // bottom row
-        KC_LBRACKET, KC_RBRACKET,                         // thumb top row
+        KC_LBRC, KC_RBRC,                         // thumb top row
         _______, HASHROCKET,                              // two thumblets
-        KC_BSPACE, KC_SPACE                               // big thumb buttons
+        KC_BSPC, KC_SPACE                               // big thumb buttons
         ),
 
     // layer 1
@@ -49,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,                                                       // top big vertical
         _______, KC_HASH, KC_DLR, KC_LPRN, KC_RPRN, KC_GRAVE,          // 3rd row
         _______,                                                       // bottom big vertical
-        KC_PERC, KC_CIRC, KC_LBRACKET, KC_RBRACKET, KC_TILD, _______,  // 4th row
+        KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD, _______,  // 4th row
         _______, _______, _______, _______, _______,                   // bottom row
         RGB_MOD, _______,                                              // thumb row top
         _______,                                                       // top thumblet
@@ -118,7 +116,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, KC_UP, _______, _______, _______,             // 2nd row
         _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______, KC_PGUP,          // 3rd row
         _______,                                                        // bottom big vertical
-        _______, _______, _______, KC_UP, _______, KC_PGDOWN,           // 4th row
+        _______, _______, _______, KC_UP, _______, KC_PGDN,           // 4th row
         _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______,                   // bottom row
         _______, _______,                                               // thumb top row
         _______, _______,                                               // two thumblets
