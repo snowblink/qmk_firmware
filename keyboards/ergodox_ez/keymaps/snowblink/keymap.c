@@ -49,9 +49,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,                                                       // bottom big vertical
         KC_PERC, KC_CIRC, KC_LBRC, KC_RBRC, KC_TILD, _______,  // 4th row
         _______, _______, _______, _______, _______,                   // bottom row
-        RGB_MOD, _______,                                              // thumb row top
+        RGB_MOD, RGB_RMOD, // cycle through RGB Modes                  // thumb row top
         _______,                                                       // top thumblet
-        RGB_VAD, RGB_VAI,                                              // big thumb buttons
+        RGB_VAD, RGB_VAI,  // decrease brightness, increase brightness // big thumb buttons
         _______,                                                       // bottom thumblet
 
         // right hand
@@ -62,9 +62,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,                                               // bottom big vertical
         KC_AMPR, _______, _______, _______, _______, _______,  // 4th row
         _______, _______, _______, _______, _______,           // bottom row
-        RGB_TOG, RGB_SLD,                                      // thumb top row
+        RGB_TOG, RGB_SLD, // RGB on/off, reset mode to solid   // thumb top row
         _______, _______,                                      // two thumblets
-        RGB_HUD, RGB_HUI                                       // big thumb buttons
+        RGB_HUD, RGB_HUI  // change hue                        // big thumb buttons
         ),
 
     // layer 2
