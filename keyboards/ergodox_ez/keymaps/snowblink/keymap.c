@@ -111,9 +111,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______,                                                        // bottom thumblet
 
         // right hand
-        _______, _______, _______, _______, _______, _______, _______,  // top row
+        _______, _______, _______, _______, _______, _______, KC_HOME,  // top row
         _______,                                                        // top big vertical
-        _______, _______, KC_UP, _______, _______, _______,             // 2nd row
+        _______, _______, KC_UP, _______, _______, KC_END,             // 2nd row
         _______, KC_LEFT, KC_DOWN, KC_RIGHT, _______, KC_PGUP,          // 3rd row
         _______,                                                        // bottom big vertical
         _______, _______, _______, KC_UP, _______, KC_PGDN,           // 4th row
