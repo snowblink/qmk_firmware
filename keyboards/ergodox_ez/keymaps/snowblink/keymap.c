@@ -35,7 +35,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_N, KC_M, KC_COMMA, KC_DOT, KC_SLASH, KC_RSFT,  // 4th row
         KC_LGUI, KC_LALT, KC_LCTL, _______, TT(3),        // bottom row
         KC_LBRC, KC_RBRC,                         // thumb top row
-        _______, HASHROCKET,                              // two thumblets
+        KC_DEL, HASHROCKET,                              // two thumblets
         KC_BSPC, KC_SPACE                               // big thumb buttons
         ),
 
