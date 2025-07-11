@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         CTL_T(KC_ESCAPE), KC_A, KC_S, KC_D, KC_F, KC_G,  // 3rd row
         KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B,           // 4th row
         LGUI(KC_V),                                      // bottom big vertical
-        TT(4), _______, KC_LCTL, KC_LALT, KC_LGUI,       // bottom row
+        TT(4), CW_TOGG, KC_LCTL, KC_LALT, KC_LGUI,       // bottom row
         KC_MINUS, KC_EQUAL,                              // thumb top row
         _______,                                         // top thumblet
         KC_LGUI, KC_ENTER,                               // big thumb buttons
