@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______, KC_MS_BTN1, KC_MS_BTN2,               // bottom row
         _______, _______,                                                // thumb top row
         _______,                                                         // top thumblet
-        KC_MS_BTN1, _______,                                             // big thumb buttons
+        KC_MS_BTN1, KC_MS_BTN2,                                             // big thumb buttons
         _______,                                                         // bottom thumblet
 
         // right hand
